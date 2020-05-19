@@ -4,8 +4,8 @@
 #ifndef ToshibaDaiseikaiHeatpumpIR_h
 #define ToshibaDaiseikaiHeatpumpIR_h
 
-#include <HeatpumpIR.h>
-#include <CarrierHeatpumpIR.h> // Toshiba Daiseikai is based on the Carrier models
+#include "HeatpumpIR.h"
+#include "CarrierHeatpumpIR.h" // Toshiba Daiseikai is based on the Carrier models
 
 
 // Toshiba Daiseikai (RAS-10G2KVP-E RAS-10G2AVP-E and RAS-13G2KVP-E RAS-13G2AVP-E) timing constants (remote control P/N WH-TA01EE)
