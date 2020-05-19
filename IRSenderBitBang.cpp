@@ -1,5 +1,4 @@
-#include <Arduino.h>
-#include <IRSender.h>
+#include "IRSender.h"
 
 // Send IR using the 'bit banging' on ESP8266 etc.
 

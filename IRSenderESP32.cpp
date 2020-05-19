@@ -1,11 +1,10 @@
-#include <Arduino.h>
 
 // IRSender implementation for ESP32
 // Tested on R51M/E control with SENSEI air conditioner 
 // Maksym Krasovskyi
 
 #if defined ESP32
-#include <IRSender.h>
+#include "IRSender.h"
 IRSenderESP32::IRSenderESP32(uint8_t pin, uint8_t pwmChannel) : IRSender(pin)
 {
   _pwmChannel = pwmChannel;

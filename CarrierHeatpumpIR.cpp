@@ -1,4 +1,4 @@
-#include <CarrierHeatpumpIR.h>
+#include "CarrierHeatpumpIR.h"
 
 // This is a protected method, i.e. generic Carrier instances cannot be created
 CarrierHeatpumpIR::CarrierHeatpumpIR() : HeatpumpIR()

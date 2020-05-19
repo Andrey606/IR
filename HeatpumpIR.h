@@ -7,9 +7,8 @@
 #ifndef HeatpumpIR_h
 #define HeatpumpIR_h
 
-#include <Arduino.h>
-#include <IRSender.h>
-
+#include "IRSender.h"
+ 
 
 // Power state
 #define POWER_OFF   0

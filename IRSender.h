@@ -4,12 +4,24 @@
 #ifndef IRSender_h
 #define IRSender_h
 
-#include <Arduino.h>
-
-#ifdef ESP8266
-#include <IRsend.h>  // From IRremoteESP8266 library
+#include <cstring>
+#include <cstdio>
 #include <stdint.h>
-#endif
+
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <chrono>
+
+// disable Arduino functions
+#define PROGMEM
+#define pinMode(a, b) 
+#define digitalWrite(a, b) 
+#define delayMicroseconds(a) 
+#define micros() 0 // Returns the number of microseconds
+#define delay(a) 
+#define pgm_read_byte(a) *(a) //pgm_read_byte(&(temperatures[(temperature-17)]));
+#define memcpy_P(a, b, c) memcpy(a, b, c) // memcpy_P(sendBuffer, sendBufferMaintenance1, sizeof(sendBufferMaintenance1));    
 
 class IRSender
 {
@@ -18,11 +30,11 @@ class IRSender
 
   public:
     virtual ~IRSender() = default;
-    virtual void setFrequency(int frequency);
+    void setFrequency(int frequency);
     void sendIRbyte(uint8_t sendByte, int bitMarkLength, int zeroSpaceLength, int oneSpaceLength);
     uint8_t bitReverse(uint8_t x);
-    virtual void space(int spaceLength);
-    virtual void mark(int markLength);
+    void space(int spaceLength);
+    void mark(int markLength);
 
   protected:
     uint8_t _pin;

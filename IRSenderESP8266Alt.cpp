@@ -1,6 +1,5 @@
-#include <Arduino.h>
 #ifdef ESP8266
-#include <IRSender.h>
+#include "IRSender.h"
 
 // Send IR using the 'bit banging' on ESP8266 using alternative ESP.getCycleCount() method
 

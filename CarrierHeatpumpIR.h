@@ -6,7 +6,7 @@
 #ifndef CarrierHeatpumpIR_h
 #define CarrierHeatpumpIR_h
 
-#include <HeatpumpIR.h>
+#include "HeatpumpIR.h"
 
 // Carrier (42NQV035G / 38NYV035H2) timing constants (remote control P/N WH-L05SE)
 #define CARRIER_AIRCON1_HDR_MARK   4320

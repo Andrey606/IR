@@ -1,5 +1,4 @@
-#include <Arduino.h>
-#include <IRSender.h>
+#include "IRSender.h"
 
 // The generic functions of the abstract IRSender class
 
@@ -45,6 +44,6 @@ uint8_t IRSender::bitReverse(uint8_t x)
 
 
 // Definitions of virtual functions
-void IRSender::setFrequency(int) {};
-void IRSender::space(int) {};
-void IRSender::mark(int) {};
+void IRSender::setFrequency(int) { std::cout << "IRSender::setFrequency(int)" << std::endl; };
+void IRSender::space(int) { std::cout << "IRSender::space(int)" << std::endl; };
+void IRSender::mark(int) { std::cout << "IRSender::mark(int)" << std::endl; };
