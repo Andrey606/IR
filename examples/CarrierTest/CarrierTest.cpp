@@ -1,9 +1,3 @@
-#include <iostream>
-#include <string>
-#include <memory>
-#include <vector>
-#include <functional>
-
 #include "../../CarrierHeatpumpIR.h"
 
 using namespace std;
