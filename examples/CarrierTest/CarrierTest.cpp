@@ -14,7 +14,7 @@ int main()
   cout << "Starting" << endl;
 
   const char* buf;
-  cout << "Sending IR to " << endl;
+  cout << "Sending IR to ";
 
   // Print the model
   buf = heatpumpIR->model();
